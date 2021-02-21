@@ -1,6 +1,6 @@
 # consuming-api
 consuming api in frontend and backend using express
-- [x]  start to proyect with nam init
+- [x]  start to proyect with npm init
 - [x]  install dependencies' npm i express nodemon cors axios'
 - [x]  create a path to the API
 - [x]  server api
