@@ -5,12 +5,21 @@
 
     async function getContent(){
         try{ 
-            const response = await fetch('http://localhost:3001/')
+            const response = await fetch('http://localhost:3000/');
+            const data = await response.json()
+            show(data);
+
         } catch (error){
-        console.log('errroooou');
+        console.log(error);
         }
     }
-    
+getContent();
 
-getContent()
+function show(users){
+    let output = '';
+    for(let user of users){
+        output += `<li>${user.name}</li>`
+    }
+    document.querySelector('main').innerHTML = output;
+}
 </script>
