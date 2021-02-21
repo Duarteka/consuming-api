@@ -2,12 +2,15 @@
     <main></main>
 </body>
 <script>
+
     async function getContent(){
         try{ 
-            const response = await fetch('http://localhost:3000')
-        }catch (error){
-        consolr.log(error(error))
+            const response = await fetch('http://localhost:3001/')
+        } catch (error){
+        console.log('errroooou');
+        }
     }
-}
+    
+
 getContent()
 </script>
